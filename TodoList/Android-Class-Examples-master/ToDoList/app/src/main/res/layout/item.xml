@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_red_light" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="To do description"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/status"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:textColor="#ede726"/>
+
+    <TextView
+        android:id="@+id/dueDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:text="06-04-2017"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:layout_constraintLeft_toRightOf="@+id/status"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="#255da3"/>
+
+    <!--Added TextView with id MainTextTo-->
+    <TextView
+        android:id="@+id/MainTextTo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:text="category"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:layout_constraintLeft_toRightOf="@+id/dueDate"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="#d7832a"
+        android:textStyle="italic"/>
+
+    <!--Added checkbox with id status-->
+    <CheckBox
+        android:id="@+id/status"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_red_light" />
+</android.support.constraint.ConstraintLayout>

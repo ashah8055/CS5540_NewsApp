@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <!--Added dropdown values when user add todo list-->
+    <string-array name="Drop_categories_list">
+        <item>Office</item>
+        <item>School</item>
+        <item>Food</item>
+        <item>Health</item>
+    </string-array>
+
+    <!--category menu-->
+    <string name="category_menu">Category</string>
+
+    <!--Categories values to sort todo-->
+    <string name="list_0">All</string>
+    <string name="list_1">Office</string>
+    <string name="list_2">School</string>
+    <string name="list_3">Food</string>
+    <string name="list_4">Health</string>
+</resources>
