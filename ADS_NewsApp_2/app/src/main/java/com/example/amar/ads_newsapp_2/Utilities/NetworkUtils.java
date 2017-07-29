@@ -3,7 +3,7 @@ package com.example.amar.ads_newsapp_2.Utilities;
 import android.net.Uri;
 import android.util.Log;
 
-import com.example.amar.ads_newsapp_2.Model.NewsItemClass;
+import com.example.amar.ads_newsapp_2.Newsdata.NewsItemClass;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -34,7 +34,7 @@ public class NetworkUtils {
     private final static String sort = "latest";
     private final static String key = "a3b8f59e2bde4d68bafc3c11289296a8";
 
-    //Done TODO 5.Create a static method in NetworkUtils that uses Uri.Builder to build the appropriate url, the url you used in (2), to return a completed Java URL.
+    //.Create a static method in NetworkUtils that uses Uri.Builder to build the appropriate url, the url you used in (2), to return a completed Java URL.
 
     public static URL buildUrl() {
         Uri builtUri = Uri.parse(BASE_URL).buildUpon()
@@ -55,7 +55,7 @@ public class NetworkUtils {
         return url;
     }
 
-    //6. Done TODO Put this method in your NetworkUtils class:
+    //TODO Put this method in your NetworkUtils class:
     public static String getResponseFromHttpUrl(URL url) throws IOException {
         HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
         try {
